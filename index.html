@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#users">Users</a></li>
+            <li><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+<style>
+body {
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    min-height: 100vh; 
+    padding-top: 50px; 
+}
+
+.navbar {
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-bottom: 5px solid #ffa500; 
+    padding: 0; 
+    margin: 0; 
+    display: inline-block; 
+    border-radius: 4px; 
+    overflow: hidden; 
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.navbar a {
+    display: block; 
+    color: white; 
+    text-decoration: none; 
+    padding: 15px 25px; 
+    font-size: 16px; 
+    font-weight: normal; 
+    transition: background-color 0.3s ease; 
+    border-right: 1px solid white; 
+    white-space: nowrap; 
+}
+
+.navbar li:last-child a {
+    border-right: none; 
+}
+
+.navbar a:hover {
+    background-color: #333; 
+}
+</style>
